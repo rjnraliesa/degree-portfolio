@@ -11,7 +11,6 @@
         <h1>More than<br>a degree.<br><em>A story of growth.</em></h1>
         <p class="hero-description">A collection of learning, leadership, and contribution throughout my university journey.</p>
         <a class="primary-link" href="#experiences">Explore my journey <span aria-hidden="true">↗</span></a>
-        <p class="hero-note">Prepared for convocation award consideration</p>
       </div>
       <aside class="profile-card" aria-label="Profile summary">
         <div class="card-top"><span>PERSONAL PORTFOLIO</span><span>01 / PROFILE</span></div>
@@ -28,4 +27,4 @@
       <p class="sr-only" aria-live="polite" id="filter-status"></p>
     </section>
     <section class="closing wrap"><p class="eyebrow">THE NEXT CHAPTER</p><h2>A foundation for<br><em>what comes next.</em></h2><p>Learning. Contributing. Becoming.</p><a href="#home">Back to the beginning ↑</a></section>
-  </main><footer class="wrap"><span>${a(r.name)} · Degree Portfolio</span><span>Prepared for convocation award consideration</span></footer>`;document.querySelector(".print-button").addEventListener("click",()=>window.print());document.querySelectorAll("[data-category]").forEach(e=>e.addEventListener("click",()=>{const t=e.dataset.category;document.querySelectorAll("[data-category]").forEach(i=>i.setAttribute("aria-pressed",String(i===e)));let o=0;document.querySelectorAll("[data-experience-category]").forEach(i=>{i.hidden=t!=="All experiences"&&i.dataset.experienceCategory!==t,i.hidden||o++}),document.querySelector("#filter-status").textContent=`${o} experience ${o===1?"section":"sections"} shown.`}));
+  </main><footer class="wrap"><span>${a(r.name)} · Degree Portfolio</span></footer>`;document.querySelector(".print-button").addEventListener("click",()=>window.print());document.querySelectorAll("[data-category]").forEach(e=>e.addEventListener("click",()=>{const t=e.dataset.category;document.querySelectorAll("[data-category]").forEach(i=>i.setAttribute("aria-pressed",String(i===e)));let o=0;document.querySelectorAll("[data-experience-category]").forEach(i=>{i.hidden=t!=="All experiences"&&i.dataset.experienceCategory!==t,i.hidden||o++}),document.querySelector("#filter-status").textContent=`${o} experience ${o===1?"section":"sections"} shown.`}));
